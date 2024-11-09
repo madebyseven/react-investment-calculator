@@ -3,18 +3,18 @@ function UserInput({ onChange, userInput }) {
     <section id="user-input">
       <div className="input-group">
         <p>
-          <label htmlFor="">Initial Investment</label>
+          <label>Initial Investment</label>
           <input
             type="number"
             required
             value={userInput.initialInvestment}
             onChange={(event) =>
-              onChange("initialIdentifier", event.target.value)
+              onChange("initialInvestment", event.target.value)
             }
           />
         </p>
         <p>
-          <label htmlFor="">Annual Investment</label>
+          <label>Annual Investment</label>
           <input
             type="number"
             required
@@ -27,7 +27,7 @@ function UserInput({ onChange, userInput }) {
       </div>
       <div className="input-group">
         <p>
-          <label htmlFor="">Expected Return</label>
+          <label>Expected Return</label>
           <input
             type="number"
             required
@@ -36,7 +36,7 @@ function UserInput({ onChange, userInput }) {
           />
         </p>
         <p>
-          <label htmlFor="">Duration</label>
+          <label>Duration</label>
           <input
             type="number"
             required
